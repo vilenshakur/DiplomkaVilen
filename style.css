@@ -1,0 +1,483 @@
+
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ff6600, #ff9933);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+/* Стиль для секции с хедером */
+.up {
+    padding: 0px 5px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.logo_text {
+    margin-left: 10px;
+    text-transform: uppercase;
+
+}
+
+.up_link {
+    padding: 0px 0;
+    margin: 20px;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    cursor: grab;
+} 
+.logo-img{
+    width: 100px;
+    border-radius: 10px;
+}
+/* Стиль для секции с баннером */
+.banner {
+    
+    background-size: cover; 
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   
+}
+
+.banner p {
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+}
+
+.banner .cta-button {
+    background-color: #ff781e;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  
+}
+
+.banner .cta-button:hover {
+    background-color: #ff9933;
+}
+
+/* Стиль для секции с категориями товаров */
+.categories {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+
+.categories .category {
+    margin: 20px;
+}
+
+.categories img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ff6600;
+}
+
+.categories h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Стиль для секции с акциями и скидками */
+.promotions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    
+
+}
+
+.promotions .promotion {
+    margin: 20px;
+}
+
+.promotions img {
+   width: 200px;;
+}
+
+.promotions h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.promotions p {
+    font-size: 16px;
+    color: #777;
+}
+/* Стиль для секции с видео-презентацией */
+.video-presentation {
+    position: relative;
+    background-color: #333;
+   
+    color: #fff;
+    
+    padding: 80px 0;
+    
+    text-align: center;
+    overflow: hidden;
+   
+}
+
+.video-presentation h2 {
+    font-size: 36px;
+   
+    margin-bottom: 20px;
+   
+}
+
+.video-presentation iframe {
+    width: 400px;
+    
+    height: 250px;
+   
+    margin: 0 auto;
+  
+    display: block;
+    border: 2px solid #ff6600;
+   
+    border-radius: 10px;
+   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+@keyframes waveAnimation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 2000px 0;
+
+    }
+}
+@keyframes waveAnimation2 {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 2000px 0;
+       
+    }
+}
+    
+/* Создание плавной и непрерывной волны фона */
+.video-presentation::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    
+    top: 0;
+    left: 0;
+background: linear-gradient(to right, #979797, #ff6600, #ff6600, #979797);
+    
+    background-size: 2000px 100%;
+   
+    background-position: 0 0;
+    animation: waveAnimation 10s linear infinite;
+    border-radius: 30px;
+}
+.video-presentation::after {
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 60px;
+  
+    top: 450px;
+  
+    left: 0;
+    background: linear-gradient(to left, #979797, #ff6600, #ff6600, #979797);
+    
+    background-size: 2000px 100%;
+    
+    background-position: 0 0;
+    animation: waveAnimation2 5s linear infinite;
+   
+}
+/* Стиль для секции "О нас" */
+.about-certificates-section {
+    background-color: #f7f7f7;
+   
+    padding: 40px 0;
+   
+    text-align: center;
+}
+
+.about-certificates-section h2 {
+    font-size: 28px;
+  
+    margin-bottom: 20px;
+    
+}
+
+.about-certificates-section p {
+    font-size: 18px;
+   
+    margin-bottom: 30px;
+   
+}
+.foto3{
+    border-radius: 10px;
+}
+.photo-section {
+    background-color: #fff;
+   
+    padding: 40px 0;
+   
+    text-align: center;
+}
+
+.photo-section h2 {
+    font-size: 28px;
+    
+    margin-bottom: 20px;
+    
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    gap: 20px;
+    
+}
+
+.photo-grid img {
+    max-width: 100%;
+    height: auto;
+}
+/* Стиль для секции "Отзывы" */
+.customer-reviews {
+    background-color: #f9f9f9;
+   
+    padding: 40px 0;
+   
+    text-align: center;
+}
+
+.customer-reviews h2 {
+    font-size: 36px;
+   
+    margin-bottom: 20px;
+   
+    color: #333;
+   
+}
+
+.customer-reviews .review {
+    background-color: #fff;
+  
+    border-radius: 5px;
+   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+    padding: 20px;
+    
+    margin: 20px;
+    
+}
+
+.customer-reviews .review p {
+    font-size: 20px;
+   
+    line-height: 1.5;
+   
+    margin: 10px 0;
+   
+    color: #555;
+    
+}
+
+.customer-reviews .review .author {
+    font-style: italic;
+   
+    color: #ff6200;
+    
+    margin-top: 10px;
+   
+}
+
+/* Стиль для секции "Контакты" */
+
+
+
+.contact-section {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+
+}
+
+.contact-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info .contact-icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ff6600;
+   
+}
+.registration-form {
+    display: flex;
+    height: 500px;
+   
+    background-color: #fff;
+    padding: 20px;
+    border-radius: px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    justify-content: center;
+
+}
+
+.registration-form h2 {
+   
+    
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+   
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    
+}
+
+.form-group input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff4500;
+}
+
+/* Стиль для ссылок "Забыли пароль" или других дополнительных действий */
+.registration-form a {
+    text-decoration: none;
+    color: #ff6600;
+   
+    font-weight: bold;
+}
+
+.registration-form a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
